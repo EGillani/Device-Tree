@@ -1,0 +1,117 @@
+<html>
+	<head>
+    <link href="styles.css" rel="stylesheet" />
+		<script src="script.js"></script>
+		<title>Device Tree Form</title>
+	</head>
+	<body onload="retrieveVidData(); retrieveHardDiskData(); retrieveSSDData();">
+    <main>
+    <section class= "vid">
+        <h1>Video Device</h1>
+        <div id="videoDeviceProperties"  class="ObjContents">
+        <ul>            
+            <li >Device Number: <span id="objNumVid"></span> </li>
+            <li>Status: 
+        <label><input type="checkbox" id="statusVid"/> Enabled </label></li>
+            <li>Replacement Cost ($)</li>
+        <li><input type="text" id="replaceCostVid" class="videoDevice" /></li>
+            <li>Supplier Name</li>
+        <li><input type="text" id="supplierNameVid" class="videoDevice" /></li>
+            <li>Serial Number</li>
+        <li><input type="text" id="serialNumVid" class="videoDevice" /></li>
+            <li>Resolution</li>
+        <li><input type="text" id="resVid" class="videoDevice"/></li>
+            <li>Type</li>
+        <li> <select id="typeVid">
+           <option>LCD</option>
+          <option>LED</option>
+          <option>Plasma</option>
+            </select></li>
+        </ul>
+
+        </div>
+        <div class="topButtons">
+        <input type="button" id="prevVid" class= "BtnButton" value="Previous"  onclick="previousVidObj();"/>
+        <input type="button" id="nextVid" class= "BtnButton" value="Next" onclick="nextVidObj();"/>
+        </div>
+        <div class="bottomButtons" >
+        <input type="button" id="updateVid" class= "BtnButton" value="Update" onclick="updateVidObj();"/>
+        <input type="button" id="newVid" class= "BtnButton" value="New" onclick= "createNewVidObj()" />
+        </div>
+        
+    </section>
+    <section class="hd">
+        <h1>Hard Disk</h1>
+        <div id="hardDiskProperties" class="ObjContents">
+        <ul>            
+            <li >Device Number: <span id="objNumHD"></span> </li>
+            <li>Status: 
+        <label><input type="checkbox" id="statusHD"/> Enabled </label></li>
+            <li>Replacement Cost ($)</li>
+        <li><input type="text" id="replaceCostHD" /></li>
+            <li>Supplier Name</li>
+        <li><input type="text" id="supplierNameHD" /></li>
+            <li>Serial Number</li>
+        <li><input type="text" id="serialNumHD"  /></li>
+            <li>Size</li>
+        <li><input type="text" id="sizeHD" /></li>
+            <li>Transfer Rate</li>
+        <li><input type="text" id="transRateHD" /></li>
+            <li>Platter Size</li>
+        <li><input type="text" id="platterSizeHD" /></li>
+            <li>Number of Platters</li>
+        <li><input type="text" id="numOfPlattersHD" /></li>
+            </ul>
+
+        </div>
+        <div class="topButtons">
+        <input type="button" class= "BtnButton" value="Previous"  onclick="previousHDObj();"/>
+        <input type="button" id="nextHD" class= "BtnButton" value="Next" onclick="nextHDObj();"/>
+        </div>
+        <div class="bottomButtons">
+        <input type="button" class= "BtnButton" value="Update" onclick="updateHDObj();"/>
+        <input type="button" id="newHD" class= "BtnButton" value="New" onclick= "createNewHDObj();" />
+        </div>
+        
+    </section>
+        <section class="SSD">
+        <h1>SSD </h1>
+        <div id="SSDProperties" class="ObjContents">
+        <ul>            
+            <li >Device Number: <span id="objNumSSD"></span> </li>
+            <li>Status: 
+        <label><input type="checkbox" id="statusSSD"/> Enabled </label></li>
+            <li>Replacement Cost ($)</li>
+        <li><input type="text" id="replaceCostSSD" /></li>
+            <li>Supplier Name</li>
+        <li><input type="text" id="supplierNameSSD" /></li>
+            <li>Serial Number</li>
+        <li><input type="text" id="serialNumSSD"  /></li>
+            <li>Size</li>
+        <li><input type="text" id="sizeSSD" /></li>
+            <li>Transfer Rate</li>
+        <li><input type="text" id="transRateSSD" /></li>
+             <li>Type</li>
+        <li> <select id="typeSSD">
+           <option>Flash</option>
+          <option>DRAM</option>
+            </select></li>
+        <li>Wear Leveling: 
+        <input type="checkbox" id="wearLevSSD"/></li>
+            </ul>
+
+        </div>
+        <div class="topButtons">
+        <input type="button" class= "BtnButton" value="Previous"  onclick="previousSSDObj();"/>
+        <input type="button" id="nextSSD" class= "BtnButton" value="Next" onclick="nextSSDObj();"/>
+        </div>
+        <div class="bottomButtons">
+        <input type="button"  class= "BtnButton" value="Update" onclick="updateSSDObj();"/>
+        <input type="button" id="newSSD" class= "BtnButton" value="New" onclick= "createNewSSDObj();" />
+        </div>
+        
+    </section>
+   </main>
+	</body>
+</html>
+

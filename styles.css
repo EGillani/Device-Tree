@@ -1,0 +1,87 @@
+body
+{
+    margin: 0; 
+}
+main
+{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#7FFFD4, #FFFFFF);
+}
+section
+{
+    width: 250px;
+    height: 500px;
+    border-style:solid;
+    float: left;           
+    margin-left: 1%;
+    padding-bottom: 3%; 
+    background: #B0E0E6;
+    border: 2px solid grey;
+    border-radius: 25px;
+}
+section.HD
+{
+    width: 250px;
+    height: 640px;
+    border-style:solid;     
+    margin-left: 1%;
+    padding-bottom: 1.5%; 
+}
+section.SSD
+{
+    width: 250px;
+    height: 600px;
+    border-style:solid;
+    float: left;           
+    margin-left: 1%;
+    padding-bottom: 1.5%; 
+}
+h1
+{
+    margin: 0 auto; 
+    text-align: center; 
+    text-shadow: 2px 2px 3px black;
+    color:white; 
+}
+.ObjContents
+{
+    width: 90%;
+    height: 85%; 
+    border-style: solid; 
+    border-width: 1px; 
+    margin: 0 auto; 
+    padding-bottom: 10px;
+    background: #F0FFFF;
+    color:darkslategrey;
+}
+.ObjContents ul
+{
+    list-style: none; 
+    padding: 0; 
+
+}
+.ObjContents li
+{
+    line-height: 2; 
+    text-align: center;
+}
+.BtnButton
+{
+        border: 2px solid grey;
+    border-radius: 25px;
+}
+section .topButtons
+{
+    text-align: left; 
+    padding: 10px 15px 5px 15px;
+}
+section .bottomButtons
+{
+    text-align: left; 
+    padding: 5px 15px 5px 15px;
+}
+section #nextVid, #nextHD, #nextSSD, #newVid, #newSSD, #newHD
+{
+    float: right; 
+}
